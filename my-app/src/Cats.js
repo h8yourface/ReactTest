@@ -3,32 +3,32 @@ import './App.css';
 
 const animals = [
     {
-        name: 'Snakes'
+        name: 'Lions'
     },
     {
-        name: 'Turtles'
+        name: 'Pumas'
     },
     {
-        name: 'Dinosaurs'
+        name: 'Tigers'
     },
     {
-        name: 'Lizards'
+        name: 'Cheetahs'
     }
 ];
 
-class Reptiles extends Component {
+class Cats extends Component {
     render() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1 className="App-title">Reptiles</h1>
+                    <h1 className="App-title">Cats</h1>
                 </header>
                 {animals.map((animals, index) =>
-                <button key={animals.index}>{animals.name}</button>
+                    <button key={animals.index}>{animals.name}</button>
                 )}
             </div>
         );
     }
 }
 
-export default Reptiles;
+export default Cats;

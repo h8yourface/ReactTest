@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import Reptiles from './Reptiles';
-import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
-ReactDOM.render(<Reptiles />, document.getElementById('root'));
-registerServiceWorker();
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
