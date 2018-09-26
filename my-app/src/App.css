@@ -9,6 +9,17 @@
   color: white;
   vertical-align: middle;
 }
+.App-info {
+  background-color: #222;
+  height: 70px;
+  width: 20%;
+  padding: 20px;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  align-content: flex-start;
+
+}
 
 .App-title {
   font-size: 1.5em;

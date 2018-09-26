@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Menu from './Menu';
+import LastChoice from './LastChoice';
 
 class App extends Component {
     render() {
@@ -10,8 +11,7 @@ class App extends Component {
                     <h1 className="App-title">Choose the animal you like</h1>
                 </header>
                 <Menu text={this.props.text}/>
-                <span>{this.props.reptilesText}</span>
-                <span>{this.props.catsText}</span>
+                <LastChoice catsText={this.props.catsText} reptilesText={this.props.reptilesText}/>
             </div>
         );
     }
