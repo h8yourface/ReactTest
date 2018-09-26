@@ -19,10 +19,27 @@
 }
 
 button {
-  height: 80px;
   width: 120px;
-  padding: 30px;
+  margin: 60px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+button:hover { background: rgb(53, 167, 110); }
+button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+#BackButton {
+  height: 60px;
+  width: 120px;
   border-radius: 50%;
-  margin: 20px;
 }
 

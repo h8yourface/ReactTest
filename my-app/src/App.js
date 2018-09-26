@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import { withRouter } from 'react-router-dom';
 import './App.css';
+import Menu from './Menu';
 
 class App extends Component {
     render() {
@@ -9,8 +9,9 @@ class App extends Component {
                 <header className="App-header">
                     <h1 className="App-title">Choose the animal you like</h1>
                 </header>
-                <button>Reptiles</button>
-                <button>Birds</button>
+                <Menu text={this.props.text}/>
+                <span>{this.props.reptilesText}</span>
+                <span>{this.props.catsText}</span>
             </div>
         );
     }

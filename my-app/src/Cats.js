@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import BackButton from './BackButton';
 
 const animals = [
     {
@@ -23,8 +24,9 @@ class Cats extends Component {
                 <header className="App-header">
                     <h1 className="App-title">Cats</h1>
                 </header>
+                <BackButton/>
                 {animals.map((animals, index) =>
-                    <button key={animals.index}>{animals.name}</button>
+                    <button onClick={() => {this.props.ShowLastChoice({catsText: animals.name})}} key={animals.index}>{animals.name}</button>
                 )}
             </div>
         );
