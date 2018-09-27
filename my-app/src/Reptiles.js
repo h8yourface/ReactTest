@@ -5,7 +5,7 @@ import BackButton from './BackButton';
 
 const animals = [
     {
-        name: 'Snakes'
+        name: 'Snakes',
     },
     {
         name: 'Turtles'
@@ -25,9 +25,9 @@ class Reptiles extends Component {
                 <header className="App-header">
                     <h1 className="App-title">Reptiles</h1>
                 </header>
-                <BackButton key="rep"/>
+                <BackButton/>
                 {animals.map((animals, index) =>
-                    <button onClick={() => {this.props.ShowLastChoice({reptilesText: animals.name})}} key={'rep' + animals.index}>{animals.name}</button>
+                    <button onClick={() => {this.props.ShowLastChoice({reptilesText: animals.name})}} key={'reptile: ' + index}>{animals.name}</button>
                 )}
             </div>
         );

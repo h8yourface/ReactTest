@@ -8,7 +8,6 @@ class Menu extends Component {
             <div>
                 <Link to="/Reptiles"><button>Reptiles</button></Link>
                 <Link to="/Cats"><button>Cats</button></Link>
-                <span>{this.props.text}</span>
             </div>
         );
     }

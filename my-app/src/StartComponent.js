@@ -9,8 +9,8 @@ class StartComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            reptilesText: 'You didnt choose yet',
-            catsText: 'You didnt choose yet'
+            reptilesText: '',
+            catsText: ''
         };
         this.ShowLastChoice = this.ShowLastChoice.bind(this);
     }

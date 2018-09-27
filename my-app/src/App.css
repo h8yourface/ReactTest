@@ -11,7 +11,7 @@
 }
 .App-info {
   background-color: #222;
-  height: 70px;
+  height: 50px;
   width: 20%;
   padding: 20px;
   color: white;
@@ -41,12 +41,13 @@ button {
   box-shadow: 0 -3px rgb(53,167,110) inset;
   transition: 0.2s;
 }
-button:hover { background: rgb(53, 167, 110); }
+button:hover {
+  background: rgb(53, 167, 110);
+}
 button:active {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
 }
-
 
 #BackButton {
   height: 60px;
