@@ -9,8 +9,8 @@ class StartComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            reptilesText: '',
-            catsText: ''
+            reptilesText: 'You didnt choose yet',
+            catsText: 'You didnt choose yet'
         };
         this.ShowLastChoice = this.ShowLastChoice.bind(this);
     }
@@ -21,9 +21,9 @@ class StartComponent extends Component {
         return (
             <HashRouter>
                 <div>
-                    <Route exact path="/" component={() => <App reptilesText={this.state.reptilesText} catsText={this.state.catsText}/>}/>
-                    <Route path="/Reptiles" component={() => <Reptiles ShowLastChoice={this.ShowLastChoice}/>}/>
-                    <Route path="/Cats" component={() => <Cats ShowLastChoice={this.ShowLastChoice}/>} />
+                    <Route key="AppRoute" exact path="/" component={() => <App reptilesText={this.state.reptilesText} catsText={this.state.catsText}/>}/>
+                    <Route key="RepRoute" path="/Reptiles" component={() => <Reptiles ShowLastChoice={this.ShowLastChoice}/>}/>
+                    <Route key="CatRoute" path="/Cats" component={() => <Cats ShowLastChoice={this.ShowLastChoice}/>} />
                 </div>
             </HashRouter>
         );

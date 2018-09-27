@@ -24,9 +24,9 @@ class Cats extends Component {
                 <header className="App-header">
                     <h1 className="App-title">Cats</h1>
                 </header>
-                <BackButton/>
+                <BackButton key="cat"/>
                 {animals.map((animals, index) =>
-                    <button onClick={() => {this.props.ShowLastChoice({catsText: animals.name})}} key={animals.index}>{animals.name}</button>
+                    <button onClick={() => {this.props.ShowLastChoice({catsText: animals.name})}} key={'cat' + animals.index}>{animals.name}</button>
                 )}
             </div>
         );
