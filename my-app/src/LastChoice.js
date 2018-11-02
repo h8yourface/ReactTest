@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
 class LastChoice extends Component {
-    componentWillUpdate(){
-        console.log('asdsdsds')
-    }
     render() {
         if (this.props.reptilesText !== '' || this.props.catsText !== '') {
             return (
